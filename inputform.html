@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>form</title>
+    <link rel="stylesheet" href="css/inputform.css">
+    <script type="text/javascript" src="inputform.js"></script>
+</head>
+
+<body>
+    <div id="border">
+        <h1>FORM</h1>
+        <form>
+            <div class="flex"><label for="name">Name:</label>
+                <input id="name" placeholder="Name" type="text">
+            </div>
+            <div>
+                <p id="nameError"></p>
+            </div>
+            <div class="flex"><label for="password">Password:</label>
+                <input id="password" placeholder="password" type="password">
+            </div>
+            <div>
+                <p id="pwdError"></p>
+            </div>
+
+            <!-- <input id="submit" type="submit" value="Submit"> -->
+            <button type="button" onclick="myFunc()">Submit</button>
+
+        </form>
+    </div>
+
+
+
+    <!-- <script>
+        function myFunc() {
+            var name = document.getElementById("name").value;
+            var phone = document.getElementById("phone").value;
+            document.getElementById("get").innerHTML = name;
+            //console.log(document.getElementById("get").value);
+            // alert(phone);
+        }
+    </script> -->
+</body>
+
+</html>
