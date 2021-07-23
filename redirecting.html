@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+</head>
+
+<body>
+    <h1 id="hi"></h1>
+    <script>
+        // var username = window.location.search;
+        // if (username.includes("@")) {
+        //     // var username = window.location.href.split("=")[1].split("@")[0];
+        //     // document.getElementById("hi").innerText = "Hi " + username;
+        //     username = window.location.search.split("=")[1].split("@")[0];
+        //     document.getElementById("hi").innerText = "Hi " + username;
+        // }
+        // else if (username === "") {
+        //     document.getElementById("hi").innerText = "Hi ";
+        // }
+
+        var username = window.location.search ? window.location.search.split("=")[1].split("@")[0] : " ";   //Ternary operator
+        document.getElementById("hi").innerText = "Hi " + username;
+
+        //METHOD 2 LOCALSTORAGE
+        // var username = localStorage.getItem("username");
+        // document.getElementById("hi").innerText = "Hi " + username.split("@")[0];
+
+
+
+    </script>
+</body>
+
+</html>

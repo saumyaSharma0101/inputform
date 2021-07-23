@@ -5,27 +5,38 @@
     <title>form</title>
     <link rel="stylesheet" href="css/inputform.css">
     <script type="text/javascript" src="inputform.js"></script>
+    <script type="text/javascript" src="quiz.js"></script>
 </head>
 
 <body>
-    <div id="border">
+    <header>
+        <button type="button" class="rrr" id="quiz" onclick="quiz()">Quizzinga</button>
+        <button type="button" class="rrr" id="login" onclick="login()">Login</button>
+    </header>
+
+    <div id="border" style="display: none;">
         <h1>FORM</h1>
         <form>
-            <div class="flex"><label for="name">Name:</label>
-                <input id="name" placeholder="Name" type="text">
+            <div class="flex"><label for="name">Userame:</label>
+                <input id="name" placeholder="Userame" type="text">
             </div>
             <div>
                 <p id="nameError"></p>
             </div>
             <div class="flex"><label for="password">Password:</label>
-                <input id="password" placeholder="password" type="password">
+                <input id="password" placeholder="Password" type="password">
+
+                <!-- <button type="button" id="show" onclick="show()">Show</button> -->
             </div>
+            <input type="checkbox" onclick="show()">Show Password
             <div>
                 <p id="pwdError"></p>
             </div>
 
             <!-- <input id="submit" type="submit" value="Submit"> -->
-            <button type="button" onclick="myFunc()">Submit</button>
+            <button type="reset" id="rbtn" class="btn" onclick="reset()">Reset</button>
+            <button type="button" id="sbtn" class="btn" onclick="myFunc()">Submit</button>
+
 
         </form>
     </div>

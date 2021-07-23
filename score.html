@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score</title>
+</head>
+
+<body>
+    <h1 style="color: blueviolet;">Total Score</h1>
+    <b id="totalscore"></b>
+    <h2 style="color: green;">Correct Answers</h2>
+    <b id="correct"></b>
+    <h2 style="color: red;">Wrong Answers</h2>
+    <b id="wrong"></b>
+    <script>
+        var score = window.location.search.split("=")[1].split("&")[0];
+        var totalQues = window.location.search.split("=")[2];
+        console.log(window.location.search.split("="));
+        document.getElementById("totalscore").innerText = score;
+        document.getElementById("correct").innerText = score;
+        document.getElementById("wrong").innerText = totalQues - score;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+body {
+  background: greenyellow;
+}
+
+.ans input:checked + span {
+  background-color: red;
+}
+
+.ans input[valid]:checked + span {
+  background-color: green;
+}
